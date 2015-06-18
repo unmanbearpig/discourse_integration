@@ -22,11 +22,19 @@ class DiscourseSsoController < ApplicationController
 
   private
 
+  def query_string
+    if request.query_string.blank?
+      raise RuntimeError.new 'No payload was provided'
+    end
+
+    request.query_string
+  end
+
   def sso
     # TODO: .parse can throw RuntimeError,
     #       make sure we handle it
     @sso ||= DiscourseApi::SingleSignOn
-           .parse(request.query_string, DISCOURSE_SSO_SECRET)
+           .parse(query_string, DISCOURSE_SSO_SECRET)
            .tap { |sso| sso.sso_url = DISCOURSE_SSO_URL }
   end
 end
