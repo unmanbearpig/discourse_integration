@@ -1,9 +1,6 @@
 class DiscourseSsoController < ApplicationController
-  before_action :authenticate_user!
-
   # TODO:
   #   - Extract to some class?
-  #   - Make user able to log in if not logged in
   #   - How to test it?
   #   - Add name, username to user
   #   - What is suppress_welcome_message?
@@ -11,6 +8,12 @@ class DiscourseSsoController < ApplicationController
   #   - Ability to update user profile, sync with discourse
   #   - Figure out how to migrate users from Discourse to SSO
   def authenticate
+    unless signed_in?
+      store_location_for :user, request.fullpath
+    end
+
+    authenticate_user!
+
     sso.email = current_user.email
     sso.external_id = current_user.id
 
