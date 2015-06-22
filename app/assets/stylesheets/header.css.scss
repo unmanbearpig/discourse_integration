@@ -1,0 +1,26 @@
+.top-header {
+    height: 32px;
+    width: 100%;
+    background-color: #DDD;
+    margin: 0px;
+    padding: 4px;
+
+    a, .separator {
+        box-sizing: border-box;
+        color: #333;
+        display: inline;
+        font-family: benton-sans,"Helvetica Neue",helvetica,arial,sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 16.5px;
+        position: relative;
+        top: 5px;
+        vertical-align: middle;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
