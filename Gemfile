@@ -49,4 +49,5 @@ group :development, :test do
   gem 'spring'
 
   gem 'rspec-rails', '~> 3.3'
+  gem 'bootstrap-sass', '~> 3.3.5'
 end
