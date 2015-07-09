@@ -104,6 +104,11 @@ Go to /admin/customize/css_html in your Discourse forum, create new customizatio
 These are minimal styles copied from Bootstrap and modified a little bit to avoid any collisions with Discourse CSS.
 If you need to add some other items into the header, you'll have to modify the HTML on this Discourse admin page.
 
+Replace '#' with a full url to your Rails app in the following part in HTML:
+```
+<a class="navbar-brand" href="/">
+```
+
 Since it's all static, it's impossible to add any dynamic content there and have it displayed in Discourse.
 I don't see any good way to do that, and I haven't seen any Discourse forum that does that. All of the Discourse forums I've seen customize it in pretty much the same way.
 
