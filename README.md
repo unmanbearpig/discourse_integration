@@ -98,7 +98,10 @@ Here is mine, for example:
 ```
 http://discourse-integration-app.herokuapp.com/discourse/sso
 ```
+
 #### Configure header styles
 TODO
+
 ### Enable SSO
-Make sure your app is live and enable SSO in Discourse.
+First, switch your main domain to the Rails app and make sure it is live and working.
+Enable SSO option in Discourse.
