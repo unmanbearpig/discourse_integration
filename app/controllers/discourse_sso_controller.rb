@@ -31,8 +31,6 @@ class DiscourseSsoController < ApplicationController
   end
 
   def sso
-    # TODO: .parse can throw RuntimeError,
-    #       make sure we handle it
     @sso ||= DiscourseApi::SingleSignOn
            .parse(query_string, DISCOURSE_SSO_SECRET)
            .tap { |sso| sso.sso_url = DISCOURSE_SSO_URL }
