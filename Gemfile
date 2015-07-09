@@ -50,4 +50,5 @@ group :development, :test do
 
   gem 'rspec-rails', '~> 3.3'
   gem 'bootstrap-sass', '~> 3.3.5'
+  gem 'dotenv-rails'
 end

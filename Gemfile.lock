@@ -71,6 +71,10 @@ GEM
       faraday (~> 0.9.0)
       faraday_middleware (~> 0.9)
       rack (~> 1.5)
+    dotenv (2.0.2)
+    dotenv-rails (2.0.2)
+      dotenv (= 2.0.2)
+      railties (~> 4.0)
     erubis (2.7.0)
     execjs (2.5.2)
     faraday (0.9.1)
@@ -204,6 +208,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   discourse_api (~> 0.4.4)
+  dotenv-rails
   jbuilder (~> 2.0)
   jquery-rails
   pg
