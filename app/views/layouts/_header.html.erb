@@ -1,9 +1,13 @@
-<div class="top-header">
-  <a class="logo-link" href="<%= root_path %>">
-    Discourse Integration App
-  </a>
-  <span class='separator'>|</span>
-  <a href="<%= DISCOURSE_URL =%>">
-    Forum
-  </a>
-</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><%= t(:app_name) %></a>
+    </div>
+
+    <div>
+      <ul class="nav navbar-nav">
+        <li><%= forum_link %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
