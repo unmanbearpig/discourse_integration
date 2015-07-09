@@ -84,7 +84,11 @@ Should be the same as your secret in the Discourse forum.
 The longer and more complex - the better.
 
 ### Configure Discourse
+You can find all of these settings by searching for sso in your-discourse.com/admin/site_settings/
+
 #### SSO Secret
+Should be the same as in your Rails app's config.
+
 #### SSO URL
 The url of your Rails app's SSO endpoint.
 Set it to
