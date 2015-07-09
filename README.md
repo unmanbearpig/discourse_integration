@@ -100,8 +100,16 @@ http://discourse-integration-app.herokuapp.com/discourse/sso
 ```
 
 #### Configure header styles
-TODO
+Go to /admin/customize/css_html in your Discourse forum, create new customization and copy and paste HTML and CSS from discourse_assets directory in this repository.
+These are minimal styles copied from Bootstrap and modified a little bit to avoid any collisions with Discourse CSS.
+If you need to add some other items into the header, you'll have to modify the HTML on this Discourse admin page.
+
+Since it's all static, it's impossible to add any dynamic content there and have it displayed in Discourse.
+I don't see any good way to do that, and I haven't seen any Discourse forum that does that. All of the Discourse forums I've seen customize it in pretty much the same way.
 
 ### Enable SSO
 First, switch your main domain to the Rails app and make sure it is live and working.
 Enable SSO option in Discourse.
+
+### [Optional] Create accounts for your existing user
+If you want you can create accounts for your users in the Rails app and send them the password reset link.

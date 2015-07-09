@@ -1,0 +1,101 @@
+.navbar {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333;
+
+    position: relative;
+    min-height: 50px;
+    border: 1px solid transparent;
+
+
+    border-radius: 4px;
+
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+
+
+}
+.navbar * {
+    box-sizing: border-box;
+}
+
+  .container > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-header,
+  .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-fluid .navbar-brand {
+    margin-left: -15px;
+}
+.navbar-header {
+    float: left;
+}
+
+.navbar .a {
+    text-decoration: none;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+}
+
+.navbar-default .navbar-brand {
+    color: #777;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+
+.nav > li {
+    position: relative;
+    display: block;
+}
+
+.navbar-nav > li > a {
+    padding: 15px;
+}
+
+.nav {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style: outside none none;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    // padding: 10px 15px;
+}
+
+.nav ul, ol, dd {
+    margin: 0px 0px 9px 25px;
+    padding: 0px;
+}
