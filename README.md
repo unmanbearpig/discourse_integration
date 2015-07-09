@@ -91,8 +91,8 @@ Set it to
 "#{your-app-url}/discourse/sso"
 
 Here is mine, for example:
-``
-`http://discourse-integration-app.herokuapp.com/discourse/sso
+```
+http://discourse-integration-app.herokuapp.com/discourse/sso
 ```
 #### Configure header styles
 TODO
